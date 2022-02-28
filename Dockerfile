@@ -1,4 +1,5 @@
 FROM developeranaz/rc-index:latest
+ARG DEBIAN_FRONTEND=noninteractive
 RUN d3v update
 RUN d3v install golang -y
 RUN export GOPATH=$HOME/retracker
