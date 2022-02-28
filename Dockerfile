@@ -1,6 +1,6 @@
 FROM developeranaz/rc-index:latest
-RUN apt update
-RUN apt install golang -y
+RUN d3v update
+RUN d3v install golang -y
 RUN export GOPATH=$HOME/retracker
 RUN export PATH="$GOPATH/bin:$PATH"
 ENV GOPATH=$HOME/retracker
